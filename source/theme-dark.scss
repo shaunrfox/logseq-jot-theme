@@ -2,14 +2,78 @@
   Dark Theme
 *****************************************/
 
-.dark-theme {
+.dark-theme,
+html[data-theme="dark"] {
+  /* BACKGROUNDS */
+  --ls-primary-background-color: var(--color-gray-90);
+  --ls-secondary-background-color: var(--color-gray-80);
+  --ls-tertiary-background-color: var(--color-gray-70);
+  --ls-quaternary-background-color: var(--color-gray-60);
+
+  /* TEXT */
+  --ls-primary-text-color: var(--color-gray-20); // main text
+  --ls-secondary-text-color: var(--color-gray-70);
+  --bf-strong-text-color: var(--color-gray-5);
+  --ls-head-text-color: #ffe27c;
+
+  /* LINKS */
+    // default
+    --ls-link-text-color: var(--color-gray-5);
+    --ls-link-text-color-border: var(--color-gray-60);
+
+    // hover
+    --ls-link-text-hover-color: var(--color-blue-40);
+    --ls-link-text-hover-color-border: var(--color-blue-60);
+
+    // dunno
+    --ls-active-secondary-color: var(--color-blue-40);
+    --ls-menu-hover-color: var(--ls-tertiary-background-color);
+  
+  /* BORDERS */
+  --ls-border-color: var(--color-gray-80);
+
+  /* TAGS */
+  --ls-tag-text-color: var(--color-gray-5);
+  --ls-tag-text-hover-color: var(--color-gray-5);
+  --bf-tag-background-color: var(--color-highlight-dark-gray);
+  --bf-tag-background-hover-color: var(--color-blue-40);
+
+  /* BULLETS */
+  --ls-icon-color: var(--color-gray-10); 
+  --ls-block-bullet-color: var(--ls-icon-color);
+  --ls-block-bullet-border-color: var(--color-blue-40);
+  --ls-block-bullet-active-color: var(--color-gray-5);
+  --ls-block-bullet-threading-width: var(--space-2);
+  --ls-guideline-color: var(--color-gray-70);
+
+  /* HIGHLIGHT */
+  --ls-block-highlight-color: var(--color-blue-70);
+
+  /* CHECKBOXES */
+  --ls-page-checkbox-color: var(--color-blue-40);
+  --ls-page-checkbox-border-color: var(--ls-primary-background-color); // orig
+
+  /* BLOCKQUOTE */
+  --ls-page-blockquote-border-color: var(--ls-primary-text-color); // orig
+
+  /* CODE */
+  --ls-page-inline-code-color: var(--color-red-40);
+  --ls-page-inline-code-bg-color: var(--color-mint-60);
+
+  /* MENU */
+  .ui__ac-group-name {
+    color: var(--color-gray-30);
+  }
+
   // Global
-  ::selection {
-    background: var(--ls-block-highlight-color);
-  }
-  #app-single-container ::selection {
-    background: var(--ls-selection-background-color);
-  }
+  // ::selection {
+  //   background: var(--ls-block-highlight-color);
+  // }
+
+  // .ls-block .block-control {
+  //   --ls-block-bullet-active-color: var(--color-blue-20);
+  // }
+
   // Area
   // #main-content-container {
   //   .cp__sidebar-main-content:before {
@@ -17,93 +81,97 @@
   //   }
   // }
 
-  .cp__header {
-    a:hover {
-      background-color: #3e4144;
-    }
-  }
+  // .cp__header {
+  //   a:hover {
+  //     background-color: #3e4144;
+  //   }
+  // }
 
-  .left-sidebar-inner {
-    a {
-      color: var(--ls-primary-text-color);
-      :hover {
-        color: #fff;
-      }
-    }
+  // .left-sidebar-inner {
+  //   a {
+  //     color: var(--ls-primary-text-color);
+  //     :hover {
+  //       color: #fff;
+  //     }
+  //   }
 
-    .new-page-link {
-      background: var(--ls-tertiary-background-color);
-    }
-  }
+  //   .new-page-link {
+  //     background: var(--ls-tertiary-background-color);
+  //   }
+  // }
 
-  .cp__right-sidebar {
-    .sidebar-item-list {
-      background-color: var(--ls-secondary-background-color, #d8e1e8);
-      .sidebar-item {
-        background-color: var(--ls-secondary-background-color, #d8e1e8);
-        border-bottom: 2px solid #484d52;
-      }
-    }
-  }
-  .content {
-    b,
-    strong {
-      font-weight: bolder;
-      color: var(--bf-strong-text-color);
-    }
-    a {
-      &.tag {
-        opacity: 0.83;
-        &:hover {
-          opacity: 1;
-        }
-      }
-      &.external-link {
-        b,
-        strong {
-          color: var(--bf-external-link-color);
-          &:hover {
-            color: var(--bf-external-link-hover-color);
-          }
-        }
-      }
-    }
+  // .cp__right-sidebar {
+  //   .sidebar-item-list {
+  //     background-color: var(--ls-secondary-background-color, #d8e1e8);
+  //     .sidebar-item {
+  //       background-color: var(--ls-secondary-background-color, #d8e1e8);
+  //       border-bottom: 2px solid #484d52;
+  //     }
+  //   }
+  // }
 
-    mark {
-      background: #524b25;
-      color: var(--ls-primary-text-color);
-    }
-    .external-link {
-      border-bottom: 0.05em solid rgba(255, 255, 255, 0.4);
-    }
+  // .content {
+  //   b,
+  //   strong {
+  //     font-weight: bolder;
+  //     color: var(--bf-strong-text-color);
+  //   }
+  //   a {
+  //     &.tag {
+  //       opacity: 0.83;
+  //       &:hover {
+  //         opacity: 1;
+  //       }
+  //     }
+  //     &.external-link {
+  //       b,
+  //       strong {
+  //         color: var(--bf-external-link-color);
+  //         &:hover {
+  //           color: var(--bf-external-link-hover-color);
+  //         }
+  //       }
+  //     }
+  //   }
 
-    .block-ref {
-      background: #1f535878;
-      border-bottom-color: #53d2d280;
-    }
-    .marker-switch {
-      color: var(--ls-primary-text-color);
-      background: #444;
-      &:hover {
-        opacity: 1;
-      }
-    }
-    svg.add-button > .circle {
-      fill: var(--ls-block-bullet-color, #394b59);
-    }
-  }
+  //   mark {
+  //     background: #524b25;
+  //     color: var(--ls-primary-text-color);
+  //   }
+
+  //   .external-link {
+  //     border-bottom: 0.05em solid rgba(255, 255, 255, 0.4);
+  //   }
+
+  //   .block-ref {
+  //     background: #1f535878;
+  //     border-bottom-color: #53d2d280;
+  //   }
+
+  //   .marker-switch {
+  //     color: var(--ls-primary-text-color);
+  //     background: #444;
+  //     &:hover {
+  //       opacity: 1;
+  //     }
+  //   }
+    
+  //   svg.add-button > .circle {
+  //     fill: var(--ls-block-bullet-color, #394b59);
+  //   }
+  // }
 
   // Fix color scale in dark mode;
-  .dropdown-wrapper,
-  .menu-link {
-    background-color: var(--ls-secondary-background-color);
-  }
+//   .dropdown-wrapper,
+//   .menu-link {
+//     background-color: var(--ls-secondary-background-color);
+//   }
 
-  .menu-link:hover {
-    background-color: var(--ls-menu-hover-color);
-  }
+//   .menu-link:hover {
+//     background-color: var(--ls-menu-hover-color);
+//   }
 
-  .ui__modal-overlay div {
-    background: var(--ls-primary-background-color);
-  }
+//   .ui__modal-overlay div {
+//     background: var(--ls-primary-background-color);
+//   }
 }

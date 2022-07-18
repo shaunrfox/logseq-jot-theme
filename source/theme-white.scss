@@ -2,54 +2,77 @@
   White Theme
 *****************************************/
 
-.white-theme {
-  .cp__header {
-    color: var(--ls-primary-text-color);
-    a:hover {
-      background-color: #f1f1f1;
-    }
-  }
-  #left-bar {
-    nav > a,
-    svg {
-      color: var(--ls-priamary-text-color);
-    }
-    #repo-name {
-      opacity: 1;
-      height: 22px;
-      transform: translateY(-1px);
-    }
-  }
-  // #main-content-container {
-  //   .cp__sidebar-main-content:before {
-  //     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  //   }
-  // }
-  .content {
-    .external-link {
-      border-bottom: 0.05em solid rgba(55, 53, 47, 0.25);
-    }
-    .block-ref {
-      background: rgba(40, 142, 111, 0.1);
-      border-bottom-color: rgba(40, 142, 111, 0.3);
-    }
-    .marker-switch {
-      color: #504d47;
-      background: #f3f2ed;
-      opacity: 1;
-      &:hover {
-        opacity: 0.7;
-      }
-    }
-  }
+.white-theme,
+html[data-theme="light"] {
+  /* BACKGROUNDS */
+  --ls-primary-background-color: var(--color-gray-0);
+  --ls-secondary-background-color: var(--color-gray-5);
+  --ls-tertiary-background-color: var(--color-gray-10);
+  --ls-quaternary-background-color: var(--color-gray-20);
 
-  .cp__right-sidebar {
-    .sidebar-item-list {
-      background-color: var(--ls-secondary-background-color, #d8e1e8);
-      .sidebar-item {
-        background-color: var(--ls-secondary-background-color, #d8e1e8);
-        border-bottom: 2px solid #e6e6e6;
-      }
-    }
-  }
-}
+  /* TEXT */
+  --ls-primary-text-color: var(--color-gray-60); // main text
+  --ls-secondary-text-color: var(--color-gray-30);
+  --bf-strong-text-color: var(--color-gray-80);
+  --ls-head-text-color: #ffe27c;
+
+  /* LINKS */
+    // default
+    --ls-link-text-color: var(--color-gray-80);
+    --ls-link-text-color-border: var(--color-gray-20);
+
+    // hover
+    --ls-link-text-hover-color: var(--color-blue-40);
+    --ls-link-text-hover-color-border: var(--color-blue-40);
+
+    // dunno
+    --ls-active-secondary-color: var(--color-blue-40);
+    --ls-menu-hover-color: var(--ls-tertiary-background-color);
+
+  /* BORDERS */
+  --ls-border-color: var(--color-gray-5);
+
+  /* TAGS */
+  --ls-tag-text-color: var(--color-gray-80);
+  --ls-tag-text-hover-color: var(--color-gray-5);
+  --bf-tag-background-color: var(--color-highlight-light-gray);
+  --bf-tag-background-hover-color: var(--color-blue-40);
+
+  /* BULLETS */
+  --ls-icon-color: var(--color-gray-20); 
+  --ls-block-bullet-color: var(--color-gray-5);
+  --ls-block-bullet-border-color: var(--color-gray-20);
+  --ls-block-bullet-active-color: var(--color-blue-50);
+  --ls-block-bullet-threading-width: var(--space-2);
+  --ls-guideline-color: var(--color-gray-5);
+
+  /* HIGHLIGHT */
+  --ls-selection-background-color: var(--color-blue-5);
+  --ls-block-highlight-color: var(--ls-selection-background-color);
+  
+
+  /* CHECKBOXES */
+  --ls-page-checkbox-color: var(--color-blue-50);
+  --ls-page-checkbox-border-color: var(--ls-page-checkbox-color); // orig
+  
+  /* BLOCKQUOTE */
+  --ls-page-blockquote-border-color: var(--ls-primary-text-color); // orig
+  
+  /* CODE */
+  --ls-page-inline-code-color: var(--color-red-20);
+  --ls-page-inline-code-bg-color: var(--color-mint-5);
+
+  /* references-blocks */
+  --ls-block-properties-background-color: var(--color-gray-2);
+
+  /* Menu */
+  --menu-background: var(--color-gray-0);
+  --menu-border: 1px solid var(--color-gray-10);
+  --menu-shadow: 0 3px 6px var(--color-gray-20);
+
+  --menu-group-name-color: var(--color-gray-40);
+  --menu-group-name-border: 1px solid var(--color-gray-10);
+
+  --menu-item-background: var(--color-gray-0);
+  --menu-item-text-color: var(--color-gray-60);
+  --menu-item-hover: var(--color-gray-4);
