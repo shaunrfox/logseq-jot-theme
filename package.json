@@ -1,12 +1,12 @@
 {
-  "name": "logseq-bonofix-theme",
+  "name": "logseq-jot-theme",
   "version": "3.7.3",
-  "logseq-version": "v0.7.1",
-  "author": "Sansui233",
-  "description": "A clean theme for Logseq, focusing on long time writing experience.",
+  "logseq-version": "v0.0.1",
+  "author": "shaunrfox",
+  "description": "",
   "main": "source/index.sass",
   "scripts": {
-    "watch": "sass --watch source:css",
+    "watch": "sass --watch source/index.scss ~/Library/'Mobile Documents'/iCloud~com~logseq~logseq/Documents/logseq/custom.css --no-source-map && npx uglifycss",
     "build": "sass source/index.scss custom.css --no-source-map && npx uglifycss custom.css --output ~/Library/'Mobile Documents'/iCloud~com~logseq~logseq/Documents/logseq/custom.css"
   },
   "devDependencies": {
@@ -16,12 +16,12 @@
   "logseq": {
     "themes": [
       {
-        "name": "Bonofix Theme",
+        "name": "Jot Theme",
         "url": "./custom.css",
-        "description": "A custom theme focus on UI bug fix and mobile improvement"
+        "description": ""
       }
     ],
-    "id": "sansui233_bonofix_theme",
+    "id": "shaunrfox_jot_theme",
     "icon": "./icon.png"
   }
 }

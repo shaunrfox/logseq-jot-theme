@@ -1,0 +1,40 @@
+// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+// SIDEBARS
+
+.left-sidebar-inner {
+  background-color: var(--ls-secondary-background-color);
+
+  nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a.item {
+    position: relative;
+
+    &.px-2 {
+      padding-left: var(--space-6);
+      padding-right: var(--space-6);
+    }
+
+    &.rounded-md {
+      border-radius: var(--radius-1);
+    }
+
+    &.active {
+      background-color: var(--left-sidebar-item-hover);
+      // color: 
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        background-color: var(--color-gray-0);
+      }
+    }
+  }
+}

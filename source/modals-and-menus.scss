@@ -1,0 +1,47 @@
+// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+// MODALS + MENUS
+
+//----//----//----//----//----//
+// Menu 
+
+.absolute-modal {
+  background-color: var(--menu-background);
+  border: var(--menu-border);
+  border-radius: var(--radius-4);
+
+  &.shadow-lg {
+    box-shadow: var(--menu-shadow);
+  }
+}
+
+a.menu-link {
+  background: var(---menu-item-background);
+  color: var(--menu-item-text-color);
+
+  &:hover {
+    background-color: var(--menu-item-hover);
+  }
+
+  &.chosen {
+    background-color: var(--menu-item-hover);
+  }
+
+  &:last-of-type {
+    border-bottom-left-radius: var(--space-0);
+    border-bottom-right-radius: var(--space-0);
+  }
+
+  &:first-of-type {
+    border-top-left-radius: var(--space-0);
+    border-top-right-radius: var(--space-0);
+  }
+}
+
+.ui__ac-group-name {
+  color: var(--menu-group-name-color);
+  border-bottom: var(--menu-group-name-border);
+  font-size: var(--font-size-2);
+  letter-spacing: var(--space-1);
+  padding: var(--space-6) var(--space-6) var(--space-5);
+  margin-bottom: var(--space-4);
+}

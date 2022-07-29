@@ -1,7 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-@import 'color-scheme.scss'; // updated
-@import 'layout.scss'; // ok
-@import 'theme.scss'; // partially updated
+/*                               │\ _ /│ 
+      ‚--‚ ‚-----‚ ‚------‚      ‹ • • ›  §…ƒ•×
+      ¦  ¦ ¦     ¦ ¦_    _¦       ¸`•´ `·-·-·-·…˛˛_˛  ¸˛
+   ,--¦  ¦ ¦  │  ¦   ¦  ¦         ( ˛\ /˛˛˛(  )`\˛  `´∫∫`»
+   ¦  ¦  ¦ ¦     ¦   ¦  ¦        //`˜//˜˜//˜//‘   `ˇ··ˇ´´
+   '-----' '-----'   '--'      ˝˝˝ ˝˝˝ ˝˝ ˝˝˝
+   ‚------‚ ,--, ,--, ,-----, ,--,  ,--, ,-----, ,-,
+   ¦_    _¦ ¦  ¦_¦  ¦ ¦  ┌--' ¦   `´   ¦ ¦  ┌--' ¦ ¦
+     ¦  ¦   ¦  ¸_˛  ¦ ¦  ¯¯¦  ¦  ˛  ¸  ¦ ¦  ¯¯¦  ¦_¦
+     ¦  ¦   ¦  ¦ ¦  ¦ ¦  └--, ¦  ¦`´¦  ¦ ¦  └--, ,-,
+     '--'   '--' '--' '-----' '--'  '--' '-----' '-'
+*/ 
+
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+@import 'theme-variables.scss';
+@import 'theme-base.scss';
+
+@import 'header.scss';
+@import 'main-content.scss';
+@import 'sidebars.scss';
+@import 'modals-and-menus.scss';
+
+// @import 'layout.scss';
+// @import 'theme.scss';
 @import 'theme-white.scss';
 @import 'theme-dark.scss';
-@import 'codeMirror.scss';

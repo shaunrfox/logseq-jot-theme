@@ -1,0 +1,87 @@
+// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+// REASSIGNING DEFAULT VALUES
+
+// .dark-theme,
+// html[data-theme="dark"],
+// .white-theme,
+// html[data-theme="light"]
+
+//----//----//----//----//----//
+// Layout 
+
+:root {
+  // --ls-font-family: var(--font-family-default);
+  // --ls-main-content-max-width: 840px;
+  --ls-tag-text-opacity: 1;
+  --ls-tag-text-hover-opacity: 1;
+  --ls-page-text-size: 1em;
+  --ls-page-title-size: var(--font-size-6);
+
+  /* BACKGROUNDS */
+  --ls-search-background-color: var(--ls-primary-background-color);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+  --ls-page-properties-background-color: var(--ls-secondary-background-color);
+  --ls-scrollbar-background-color: var(--ls-secondary-background-color);
+  --bf-codeblock-background-color: var(--ls-tertiary-background-color);
+  --ls-selection-background-color: var(--ls-tertiary-background-color);
+  --ls-scrollbar-foreground-color: var(--ls-tertiary-background-color);
+  --ls-table-tr-even-background-color: var(--ls-quaternary-background-color);
+  --ls-callout-background-color: var(--ls-quaternary-background-color);
+  --bf-scrollbar-thumb-hover-color: var(--ls-quaternary-background-color);
+
+  /* TEXT */
+  --ls-title-text-color: var(--ls-primary-text-color); // orig
+
+  /* LINKS */
+  // other links default
+  --ls-block-ref-link-text-color: var(--ls-link-text-color);
+  --ls-link-ref-text-color: var(--ls-link-text-color);
+  --ls-alink-color: var(--ls-link-text-color); // orig
+  --bf-external-link-color: var(--ls-link-text-color);
+  --ls-cloze-text-color: var(--ls-link-text-color);
+  --ls-active-primary-color: var(--ls-link-text-color);
+
+  // other links hover
+  --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
+  --bf-external-link-hover-color: var(--ls-link-text-hover-color);
+
+  /* EXTRAS */
+  --ls-search-icon-color: var(--ls-quaternary-background-color); // orig
+  --ls-a-chosen-bg: var(--ls-secondary-background-color); // orig
+  --color-level-1: var(--ls-secondary-background-color); // orig
+  --color-level-2: var(--ls-tertiary-background-color); // orig
+  --color-level-3: var(--ls-quaternary-background-color); // orig
+
+  /* MENU */
+  --ls-a-chosen-bg: var(--color-blue-50);
+}
+
+//----//----//----//----//----//
+// Headings 
+
+h1 {
+  font-size: var(--font-size-6); // 32px
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-height-1); // 112%
+  color: var(--ls-title-text-color);
+}
+
+h2,
+h1.title {
+  font-size: var(--font-size-4); // 20px
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-height-4); // 140%
+  color: var(--ls-title-text-color);
+}
+
+h3 {
+  font-size: var(--font-size-3); // 16px
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-height-5); // 150%
+  color: var(--ls-title-text-color);
+}
+
+::selection,
+#app-single-container ::selection {
+  background: var(--ls-selection-background-color);
+}
