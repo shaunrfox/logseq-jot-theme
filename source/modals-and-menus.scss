@@ -45,3 +45,14 @@ a.menu-link {
   padding: var(--space-6) var(--space-6) var(--space-5);
   margin-bottom: var(--space-4);
 }
+
+//----//----//----//----//----//
+// Modals 
+
+.ui__modal {
+
+}
+
+.ui__modal-overlay div {
+  background-color: var(--modal-shim-cover);
+}

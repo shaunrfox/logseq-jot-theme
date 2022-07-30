@@ -75,4 +75,14 @@ html[data-theme="light"] {
   --menu-item-text-color: var(--color-gray-60);
   --menu-item-hover: var(--color-gray-4);
   --menu-item-focus: var(--color-gray-20);
+
+  /* MODALS */
+  --modal-shim-cover: var(--color-gray-0);
+
+  /* LEFT SIDEBAR */
+  --left-sidebar-text: var(--color-gray-80);
+  --left-sidebar-item-hover: var(--color-gray-2);
+  --left-sidebar-item-active: var(--color-gray-2);
+  --left-sidebar-item-selected-accent: var(--color-gray-80);
+  --left-sidebar-section-dividers: var(--color-gray-20);
 }

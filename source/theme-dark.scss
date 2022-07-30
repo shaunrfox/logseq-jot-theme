@@ -78,6 +78,13 @@ html[data-theme="dark"] {
   --menu-item-hover: var(--color-gray-70);
   --menu-item-focus: var(--color-blue-20);
 
+  /* MODALS */
+  --modal-shim-cover: var(--color-gray-100);
+
   /* LEFT SIDEBAR */
-  --left-sidebar-item-hover: var(--ls-tertiary-background-color);
+  --left-sidebar-text: var(--color-gray-5);
+  --left-sidebar-item-hover: var(--color-gray-70);
+  --left-sidebar-item-active: var(--color-gray-70);
+  --left-sidebar-item-selected-accent: var(--color-gray-0);
+  --left-sidebar-section-dividers: var(--color-gray-70);
 }
