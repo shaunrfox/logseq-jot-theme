@@ -98,3 +98,15 @@ a.tag {
     background-color: var(--bf-tag-background-hover-color);
   }
 }
+
+//----//----//----//----//----//
+// Code
+
+:not(pre):not(mark)>code {
+  padding: var(--space-3) var(--space-4) !important;
+}
+
+// :not(pre)>code {
+  // font-size: var(--font-size-3);
+  // font-family: MonoLisa,'Fira Code',Monaco,Menlo,Consolas,'COURIER NEW',monospace;
+// }
