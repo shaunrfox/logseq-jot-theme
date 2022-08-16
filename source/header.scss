@@ -3,7 +3,11 @@
 
 .cp__header {
   a {
-    color: var(--ls-link-text-color) !important;
+    color: var(--ls-link-text-color);
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   // add important to override hover style in dark theme

@@ -56,32 +56,71 @@
   --ls-a-chosen-bg: var(--color-blue-50);
 }
 
+.document-mode .ls-block {
+  margin-bottom: var(--space-3);
+}
+
+.editor-inner textarea {
+  // padding: 2px 0;
+}
+
+.ls-block:not(:focus-within) > .items-baseline {
+  align-items: initial;
+}
+
 //----//----//----//----//----//
 // Headings 
 
-h1 {
+h1,
+.ls-block h1,
+.editor-inner .h1.uniline-block,
+.document-mode .ls-block h1,
+.document-mode .editor-inner .h1 {
   font-size: var(--font-size-6); // 32px
   font-weight: var(--font-weight-bold);
   line-height: var(--font-line-height-1); // 112%
   color: var(--ls-title-text-color);
+  min-height: 0;
+  margin: var(--space-5) 0 0;
 }
 
 h2,
+.ls-block h2,
+.editor-inner .h2.uniline-block,
+.document-mode .ls-block h2, 
+.document-mode .editor-inner .h2,
 h1.title {
   font-size: var(--font-size-4); // 20px
   font-weight: var(--font-weight-bold);
   line-height: var(--font-line-height-4); // 140%
   color: var(--ls-title-text-color);
+  min-height: 0;
+  margin: var(--space-5) 0 0;
 }
 
-h3 {
+h3,
+.ls-block h3,
+.editor-inner .h3.uniline-block,
+.document-mode .ls-block h3,
+.document-mode .editor-inner .h3 {
   font-size: var(--font-size-3); // 16px
   font-weight: var(--font-weight-bold);
   line-height: var(--font-line-height-5); // 150%
   color: var(--ls-title-text-color);
+  min-height: 0;
+  margin: var(--space-5) 0 0;
+}
+
+.editor-inner .uniline-block:is(.h1,.h2), 
+.ls-block :is(h1,h2) {
+  border: none;
 }
 
 ::selection,
 #app-single-container ::selection {
   background: var(--ls-selection-background-color);
+}
+
+hr {
+  margin: var(--space-5) 0;
 }

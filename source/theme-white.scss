@@ -17,12 +17,20 @@ html[data-theme="light"] {
 
   /* LINKS */
     // default
-    --ls-link-text-color: var(--color-gray-80);
-    --ls-link-text-color-border: var(--color-gray-20);
+    --ls-link-text-color: var(--color-blue-60);
+    --ls-link-text-border: var(--color-blue-10);
+
+    // page title links
+    --page-title-link-color: var(--color-gray-80);
+    --page-title-link-border: var(--color-gray-20);
+
+    // page ref brackets
+    --page-ref-bracket-color: var(--color-gray-10);
+    --page-ref-bracket-hover: var(--color-blue-20);
 
     // hover
     --ls-link-text-hover-color: var(--color-blue-40);
-    --ls-link-text-hover-color-border: var(--color-blue-40);
+    --ls-link-text-hover-border: var(--color-blue-40);
 
     // dunno
     --ls-active-secondary-color: var(--color-blue-40);

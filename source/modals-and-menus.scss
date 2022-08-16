@@ -14,12 +14,18 @@
   }
 }
 
-a.menu-link {
+// .is-mac.is-electron :is(.cp__header, .cp__right-sidebar-topbar) :is(button,.button,a) {
+//   cursor: pointer !important;
+// }
+
+a.menu-link,
+.cp__header a.menu-link {
   background: var(---menu-item-background);
   color: var(--menu-item-text-color);
 
   &:hover {
     background-color: var(--menu-item-hover);
+    cursor: pointer !important;
   }
 
   &.chosen {

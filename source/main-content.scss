@@ -18,16 +18,65 @@
 a h1.title,
 .page-ref,
 .external-link {
-  color: var(--ls-link-text-color);
   text-decoration: none;
-  border-bottom: var(--space-1) solid var(--ls-link-text-color-border);
   transition: ease all 200ms;
   padding-right: 0;
+  border-bottom-style: solid;
+  border-bottom-width: var(--space-1);
 
   &:hover {
     color: var(--ls-link-text-hover-color);
-    border-color: var(--ls-link-text-hover-color-border);
+    border-color: var(--ls-link-text-hover-border);
     background: none;
+  }
+}
+
+a h1.title {
+  color: var(--page-title-link-color);
+  border-color:var(--page-title-link-border);
+}
+
+.page-ref,
+.external-link {
+  color: var(--ls-link-text-color);
+  border-color: var(--ls-link-text-border);
+}
+
+.page-ref {
+  // border: none;
+
+  // &::before {
+  //   content: '[';
+  //   display: inline-block;
+  //   padding-right: 2px;
+  // }
+  // &::after {
+  //   content: ']';
+  //   display: inline-block;
+  //   padding-left: 2px;
+  // }
+}
+
+.page-reference {
+  div>.page-ref {
+    border-bottom-style: solid;
+    border-bottom-width: var(--space-1);
+  }
+  
+  .bracket + div>.page-ref {
+    border: none;
+  }
+
+  .bracket {
+    color: var(--page-ref-bracket-color);
+    opacity: 1;
+    transition: ease all 200ms;
+  }
+
+  &:hover {
+    .bracket {
+      color: var(--page-ref-bracket-hover);
+    }
   }
 }
 
